@@ -1,0 +1,21 @@
+body {
+    background-color:rgb(28, 28, 28);
+}
+
+div {
+    margin: auto;
+}
+
+h1, h2, p {
+    color: antiquewhite;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#text {
+    margin-top: 10rex;
+}
+#text p {
+    font-size: 20px;
+    margin-bottom: 5rex;
+}
