@@ -1,3 +1,59 @@
+/* Font Stuff Start */
+@font-face { /* Regular - normal, normal */
+    font-family: 'JetBrains Mono';
+    src: url("./font/JetBrainsMono-Regular.woff2") format(".woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face { /* Italic - normal, italic */
+    font-family: 'JetBrains Mono';
+    src: url("./font/JetBrainsMono-Italic.woff2") format(".woff2");
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face { /* Bold - 700, normal */
+    font-family: 'JetBrains Mono';
+    src: url("./font/JetBrainsMono-Bold.woff2") format(".woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face { /* Medium - 500, normal */
+    font-family: 'JetBrains Mono';
+    src: url("./font/JetBrainsMono-Medium.woff2") format(".woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face { /* Semi Bold - 600, normal */
+    font-family: 'JetBrains Mono';
+    src: url("./font/JetBrainsMono-SemiBold.woff2") format(".woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face { /*Bold Italic - 700, italic*/
+    font-family: 'JetBrains Mono';
+    src: url("./font/JetBrainsMono-BoldItalic.woff2") format(".woff2");
+    font-weight: 700;
+    font-style: italic;
+}
+/* Font Stuff End */
+
+/* Animation Stuff Start */
+@keyframes slightHover {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(1.5px);
+    }
+    75%{
+        transform: translateY(-1.5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+/* Animation Stuff End */
+
 body {
     background-color:rgb(28, 28, 28);
 }
@@ -9,9 +65,31 @@ div {
 h1, h2, p {
     color: antiquewhite;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'JetBrains Mono';
 }
 
+a:link, a:visited {
+    color: antiquewhite;
+    text-decoration: none;
+    display: inline-block;
+    animation-name: slightHover;
+    animation-duration: 15s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+a:hover {
+    color: rgb(245, 17, 67);
+    font-family: 'JetBrains Mono';
+    font-weight: normal;
+    font-style: italic;
+}
+a:active{
+    color: rgb(245, 17, 67);
+    font-family: 'JetBrains Mono';
+    font-weight: normal;
+    font-style: italic;
+    text-decoration: none;
+}
 #text {
     margin-top: 10rex;
 }
