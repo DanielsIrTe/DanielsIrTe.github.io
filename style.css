@@ -65,7 +65,7 @@ div {
 h1, h2, p {
     color: antiquewhite;
     text-align: center;
-    font-family: 'JetBrains Mono';
+    font-family: 'JetBrains Mono', monospace;
 }
 
 a:link, a:visited {
@@ -73,19 +73,19 @@ a:link, a:visited {
     text-decoration: none;
     display: inline-block;
     animation-name: slightHover;
-    animation-duration: 15s;
+    animation-duration: 12.5s;
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;
 }
 a:hover {
     color: rgb(245, 17, 67);
-    font-family: 'JetBrains Mono';
-    font-weight: normal;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bold;
     font-style: italic;
 }
 a:active{
     color: rgb(245, 17, 67);
-    font-family: 'JetBrains Mono';
+    font-family: 'JetBrains Mono', monospace;
     font-weight: normal;
     font-style: italic;
     text-decoration: none;
